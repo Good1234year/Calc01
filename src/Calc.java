@@ -66,10 +66,10 @@ public class Calc {
                 System.out.println("Result:");
                 System.out.println(number1 + " " + operator + " " + number2 + " = " + result);
             }
-        } catch (NumberFormatException e) {
+       } catch (NumberFormatException e) {
 
-            System.exit(0);
-        }
+            throw new NumberFormatException("Both Roman and Arabic numbers are entered or result of calculating Roman numerals is 0");
+      }
         return null;
 
     }
